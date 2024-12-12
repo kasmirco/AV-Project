@@ -173,7 +173,6 @@ nav .logo {
 }
 
 .title p:hover {
-    font-weight: bold; /* Make tagline bold on hover */
     text-shadow: 0 0 10px rgba(25, 255, 36, 0.8); /* Add green glow effect */
 }
 
@@ -1035,48 +1034,28 @@ nav .logo {
     transform: scale(1.2);
 }
 /* Contact Us */
-.title-logo-contact {
-    position: relative; /* Ensure .title-logo-contact img is positioned relative to this container */
-    display: flex;
-    right: -1100px;
-    justify-content: center; /* Center content horizontally (image initially) */
-    margin: 40px 0;
-    opacity: 0;
-    animation: fadeIn 2s ease-out forwards;
-}
 
-.title-logo-contact img {
-    position: absolute; /* Allow free positioning within the parent container */
-    top: 0; /* Adjust vertically as needed */
-    left: -370px; /* Align image to the right corner */
-    height: 630px; /* Maintain aspect ratio */
-    width: auto; /* Keep width proportional */
-    max-width: 100%; /* Ensure it doesn't exceed the container */
-    margin: 200px 0; /* Add space above and below */
-    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-}
-
-.title-logo-contact img:hover {
-    transform: scale(1.05) rotate(15deg);
-    opacity: 0.9;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-    filter: brightness(1.2);
-}
 
 /* Main Form Container */
+.title-contact {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Make the container span the full viewport height */
+    padding: 20px; /* Add padding for spacing on smaller screens */
+    box-sizing: border-box; /* Ensure padding is included in dimensions */
+}
+
 .form-container-contact {
-    position: absolute;
-    right: 50%;
-    top: 20%;
     background-color: #fff; /* White background for contrast */
     padding: 25px;
     border-radius: 15px;
     box-shadow: 1 6px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
-    width: 40%;
-    height: auto;
-    max-width: 10000px;
-    box-sizing: border-box; /* Ensures padding and borders are included in dimensions */
+    width: 42%;
+    max-width: 5000px; /* Limit the max width */
+    box-sizing: border-box; /* Ensure padding and borders are included in dimensions */
 }
+
 
 /* Form Elements */
 .box-contact {
