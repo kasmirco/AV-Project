@@ -158,23 +158,27 @@ nav .logo {
 .title {
     text-decoration: none;
     font-family: 'Efco Brookshire', cursive;
-    font-size: 6vh; /* Increase font size for all text */
+    font-size: 6vh; /* Adjust font size */
     color: rgb(255, 255, 255);
-    padding: 16px 20px; /* Adjust padding for larger size */
-    margin: 24vh auto 0; /* Center horizontally and keep top margin */
-    text-align: center; /* Center the text */
-    max-width: 1000px; /* Set a max-width to control layout */
-    transform: scale(1.1); /* Slightly increase size for both height and width */
+    padding: 16px 20px;
+    margin: 24vh auto 0;
+    text-align: center;
+    max-width: 1200px;
+    transform: scale(1.1);
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    overflow: hidden; /* Hide any overflow text */
+    text-overflow: ellipsis; /* Add an ellipsis if the text overflows */
 }
 
 .title p {
-    font-size: 4.5vh; /* Make the tagline text larger */
-    transition: font-weight 0.3s ease, text-shadow 0.3s ease; /* Smooth transitions */
+    font-size: 4.5vh;
+    transition: font-weight 0.3s ease, text-shadow 0.3s ease;
 }
 
 .title p:hover {
-    text-shadow: 0 0 10px rgba(25, 255, 36, 0.8); /* Add green glow effect */
+    text-shadow: 0 0 10px rgba(25, 255, 36, 0.8); /* Green glow effect */
 }
+
 
 
 .title-about {
