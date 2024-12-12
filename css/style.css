@@ -1,0 +1,1246 @@
+@import url('https://fonts.googleapis.com/css2?family=Efco+Brookshire&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Efco Brookshire', cursive;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border;
+    font-family:'Poppins',sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+/* Home page */
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(3, 3, 3, 0.7)); /* Adjusted opacity for a darker effect */
+    background-color: rgba(68, 27, 61, 0.3); /* Lightly purple background color */
+}
+
+.content .par {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+/* New CSS for Video Background */
+.banban {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banban video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.banban .content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(1, 0, 5, 0.3), rgba(4, 1, 17, 0.3));
+}
+
+
+nav {
+    width: 100%; /* Full width */
+    max-width: 3200px; /* Optional: Set a maximum width for larger screens */
+    position: fixed;
+    top: 0; /* Ensure it stays at the top */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    background-color: transparent; /* Start with a transparent background */
+    box-shadow: 5px 5px 30px rgba(236, 233, 233, 0.15);
+    display: flex;
+    align-items: center; /* This keeps items vertically centered */
+    justify-content: space-between;
+    height: 75px; /* Set a fixed height for the nav bar */
+    border-radius: 5px;
+    margin: 0; /* Remove margin for spacing */
+    z-index: 1000; /* Ensure it stays above other content */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1); /* Add a line below the navbar */
+}
+
+/* Other existing styles... */
+
+/* Logo Styles */
+nav .logo {
+    font-size: 100px;
+    font-family: 'Didot', serif; /* VOGUE uses a Didot-like font */
+    display: flex; /* Use flex to align items */
+    align-items: center; /* Center vertically */
+    color: white; /* Default color for the logo text */
+    font-size: 35px; /* Adjust font size */
+    text-decoration: none; /* Remove underline */
+    margin-left: 22px; /* Optional: Add some left margin */
+}
+
+.logo-green {
+    font-size:35px;
+    font-family: 'Didot', serif; /* VOGUE uses a Didot-like font */
+    color: rgba(25, 255, 36, 0.788); /* Green color for "Adventura" */
+}
+
+/* Navbar Links */
+.navbar {
+    display: flex;
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
+.navbar li {
+    list-style: none;
+    margin-left: 40px; /* Space between items */
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-weight: 400;   
+    text-decoration: none;
+    transition: ease 0.40s;
+}
+
+.navbar a:hover, .navbar a.active {
+    background: white;
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 10px 30px rgba(85, 85, 85, 0.2);
+    border-radius: 5px;
+}
+
+.title {
+    text-decoration: none;
+    font-family: 'Efco Brookshire', cursive;
+    font-size: 6vh; /* Increase font size for all text */
+    color: rgb(255, 255, 255);
+    padding: 16px 20px; /* Adjust padding for larger size */
+    margin: 24vh auto 0; /* Center horizontally and keep top margin */
+    text-align: center; /* Center the text */
+    max-width: 1000px; /* Set a max-width to control layout */
+    transform: scale(1.1); /* Slightly increase size for both height and width */
+}
+
+.title p {
+    font-size: 4.5vh; /* Make the tagline text larger */
+    transition: font-weight 0.3s ease, text-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.title p:hover {
+    font-weight: bold; /* Make tagline bold on hover */
+    text-shadow: 0 0 10px rgba(25, 255, 36, 0.8); /* Add green glow effect */
+}
+
+
+.title-about {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif; /* Use Times New Roman */
+    font-size: 6vh; /* Adjusted size for the title */
+    color: rgb(255, 255, 255); /* Default white color */
+    padding: 550px 17px;
+    margin-top: 10vh; /* Added margin to push the title down */
+    position: relative;
+    left: 25px;
+    text-align: center;
+    transition: color 0.3s ease, -webkit-text-stroke 0.3s ease; /* Smooth transition for color and text-stroke */
+}
+
+/* Each letter in the title */
+.title-about h1 {
+    font-size: 10vh; /* Make the title larger */
+    display: inline-block;
+}
+
+.title-about .letter {
+    color: rgba(25, 255, 36, 0.788); /* Default color for each letter */
+    animation: glow 2s ease-in-out infinite; /* Apply glow animation */
+    display: inline-block; /* Keep letters inline */
+}
+
+/* Space between words should not have animation */
+.title-about .letter + span {
+    color: transparent; /* Invisible space between words */
+}
+
+/* Glow animation */
+@keyframes glow {
+    0%, 100% {
+        color: #fff;
+        text-shadow: 0 0 10px rgba(25, 255, 36, 0.788), 
+                     0 0 20px rgba(25, 255, 36, 0.788), 
+                     0 0 30px rgba(25, 255, 36, 0.788), 
+                     0 0 40px rgba(25, 255, 36, 0.788), 
+                     0 0 50px rgba(25, 255, 36, 0.788), 
+                     0 0 75px rgba(25, 255, 36, 0.788);
+    }
+    10%, 90% {
+        color: #f7f7f7;
+        text-shadow: none;
+    }
+}
+
+/* Sequential animation for each letter */
+.title-about .letter:nth-child(1) {
+    animation-delay: 0s;
+}
+.title-about .letter:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.title-about .letter:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.title-about .letter:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.title-about .letter:nth-child(5) {
+    animation-delay: 0.4s;
+}
+.title-about .letter:nth-child(6) {
+    animation-delay: 0.5s;
+}
+.title-about .letter:nth-child(7) {
+    animation-delay: 0.6s;
+}
+.title-about .letter:nth-child(8) {
+    animation-delay: 0.7s;
+}
+.title-about .letter:nth-child(9) {
+    animation-delay: 0.8s;
+}
+.title-about .letter:nth-child(10) {
+    animation-delay: 0.9s;
+}
+.title-about .letter:nth-child(11) {
+    animation-delay: 1s;
+}
+.title-about .letter:nth-child(12) {
+    animation-delay: 1.1s;
+}
+.title-about .letter:nth-child(13) {
+    animation-delay: 1.2s;
+}
+.title-about .letter:nth-child(14) {
+    animation-delay: 1.3s;
+}
+.title-about .letter:nth-child(15) {
+    animation-delay: 1.4s;
+}
+.title-about .letter:nth-child(16) {
+    animation-delay: 1.5s;
+}
+.title-about .letter:nth-child(17) {
+    animation-delay: 1.6s;
+}
+/* Styling for the title */
+.title-mission {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 6vh;
+    color: rgb(255, 255, 255);
+    text-align: center; /* Center text horizontally */
+    position: absolute; /* Use absolute positioning */
+    top: 50%; /* Center the title vertically */
+    left: 50%; /* Center the title horizontally */
+    transform: translate(-50%, -50%); /* Ensure true centering */
+    transition: color 0.3s ease, -webkit-text-stroke 0.3s ease;
+}
+
+/* Each letter in the title */
+.title-mission h1 {
+    font-size: 10vh;
+    display: inline-block;
+}
+
+/* Styling for each letter in the word "Mission" */
+.mistext {
+    color: rgba(25, 255, 36, 0.788); /* Default color for each letter */
+    animation: glow 2s ease-in-out infinite; /* Apply glow animation */
+    display: inline-block;
+}
+
+/* Space between words should not have animation */
+.mistext + span {
+    color: transparent; /* Invisible space between words */
+}
+
+/* Glow animation */
+@keyframes glow {
+    0%, 100% {
+        color: #fff;
+        text-shadow: 0 0 10px rgba(25, 255, 36, 0.788),
+                     0 0 20px rgba(25, 255, 36, 0.788),
+                     0 0 30px rgba(25, 255, 36, 0.788),
+                     0 0 40px rgba(25, 255, 36, 0.788),
+                     0 0 50px rgba(25, 255, 36, 0.788),
+                     0 0 75px rgba(25, 255, 36, 0.788);
+    }
+    10%, 90% {
+        color: #f7f7f7;
+        text-shadow: none;
+    }
+}
+
+/* Sequential animation for each letter */
+.mistext:nth-child(1) {
+    animation-delay: 0s;
+}
+.mistext:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.mistext:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.mistext:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.mistext:nth-child(5) {
+    animation-delay: 0.4s;
+}
+.mistext:nth-child(6) {
+    animation-delay: 0.5s;
+}
+.mistext:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+/* Styling for the member info section */
+.member-info {
+    width: 100%;
+    padding: 20px;
+    background-color: #f8f5e8; /* Light background */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+}
+
+/* Styling the package title */
+.package-title-member {
+    text-align: center;
+}
+
+/* H2 title styling */
+.package-title {
+    font-family: 'Didot', serif;
+    font-size: 70px;
+    font-weight: bold;
+    height: 100px;
+    text-align: center;
+    line-height: 160px; /* Centers text vertically */
+    margin: 70px auto; /* Centers horizontally */
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    color: rgba(0, 0, 0, 0.863);
+    border: -10px solid #000; /* Adjustable border thickness */
+    border-radius: 100px; /* Rounded rectangle effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adds shadow for aesthetic */
+    background-color: #fff; /* Optional: background for contrast */
+}
+.org-structure-title-member {
+    text-align: center; /* Ensures the title is centered */
+    margin: 20px auto; /* Adjust spacing if needed */
+}
+
+.org-structure-title {
+    font-family: 'Didot', serif;
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    color: rgba(0, 0, 0, 0.863);
+    border-bottom: 3px solid #000; /* Adds a line at the bottom */
+    display: inline-block; /* Ensures border adjusts to text width */
+    padding-bottom: 10px; /* Adds spacing between text and the bottom line */
+    line-height: 1.2; /* Adjust spacing between the lines */
+    margin: 50px auto; /* Adds margin before and after */
+}
+
+.member {
+    position: relative;
+    margin-top: 30px; /* Spacing on top */
+    margin-bottom: 20px; /* Spacing between rows (if needed) */
+    text-align: center;
+}
+
+/* Styling for breaking lines in the title */
+.org-structure-title span {
+    display: block; /* Forces the text into separate lines */
+}
+
+/* Image styling */
+.member-image img {
+    width: 310px; /* Adjust image size */
+    height: auto;
+    border-radius: 0; /* Remove circular style */
+    margin-top: -90px; /* Space the image closer to the title */
+}
+
+/* Row layout for members */
+.member-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Spacing between members */
+    position: relative;
+}
+
+/* Remove top line for the first (leader) member */
+.member:first-child::before {
+    display: none;
+}
+
+
+/* Title Logo Container */
+.title-logo {
+    display: flex; /* Use flexbox for alignment */
+    margin: -45px 0; /* Add space above and below the image */
+    position: relative;
+    left: 120px;
+    align-items: center; /* This keeps items vertically centered */
+    opacity: 0; /* Initially hidden for the fade-in effect */
+    animation: fadeIn 2s ease-out forwards; /* Apply the fade-in animation */
+}
+
+/* Title Logo Image */
+.title-logo img {
+    height: 830px; /* Maintain aspect ratio */
+    width: auto; /* Set width to 100px */
+    max-width: 100%; /* Ensure it doesn't exceed the container */
+    display: block; /* Ensure it behaves like a block element */
+    margin: -5000px 0; /* Add space above and below the image */
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+.aventura {
+    padding: 14px 17px;
+    margin-top: 20vh;
+    text-align: center;
+    text-decoration: none;
+    font-size: 4vh;
+    color: rgb(21, 255, 0);
+}
+
+.title h1 {
+    font-size: 10vh;
+    text-shadow: 2px black;
+    transition: ease 0.3s;
+}
+
+.title h1:hover {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 50vh;
+    font-size: 25px;
+    padding: 10px 30px;
+    color: rgb(58, 57, 57);
+    background-color:#dddddd;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: ease 0.30s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    color: white;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.4);
+    padding: 10px 30px;
+}
+
+.souvenir-title {
+    font-family: 'Didot', serif; /* VOGUE uses a Didot-like font */
+    font-size: 1px; /* Increased font size to match VOGUE text */
+    font-weight: bold; /* Ensure the text is bold */
+    text-align: center; /* Center the text */
+    margin: 1% 0; /* Add margin for spacing */
+    text-transform: uppercase; /* Make text uppercase */
+    letter-spacing: 3px; /* Add spacing between letters */
+    color: rgba(0, 0, 0, 0.863); /* Change color to black like VOGUE text */
+}
+
+/* Added a black line above the 4 buttons */
+.location-content {
+    position: relative;
+    padding-top: 45px; /* Add spacing above the items */
+}
+
+/* Services */
+
+.text h2{
+    font-size: 40px;
+    font-weight: 650;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    line-height: 2;
+    text-align: center;
+}
+
+.rowitems {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, auto));
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.container-box {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 40px 5px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    background-color: white; /* Default background color */
+}
+
+.container-image img {
+    height: 100px;
+    width: 105px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.container-box h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 550;
+}
+
+.container-box p {
+    font-size: 20px;
+    color: #808080;
+}
+
+/* Hover effect to make the box darker */
+.container-box:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Darker background on hover */
+    transform: translateX(3px);
+    box-shadow: 5px 20px 50px rgba(3, 240, 14, 0.1);
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+/* Packages */
+
+.package-title{
+    text-align: center;
+}
+
+.package-title h2{
+    font-size: 40px;
+    font-weight: 650;
+    padding-top: -10px;
+    padding-bottom: 10px;
+    line-height: 2;
+}
+
+.package-content {
+    display: flex;
+    justify-content: center; /* Center the images */
+    flex-wrap: wrap;
+    gap: 40px; /* Set a 40px gap between the images */
+}
+
+.image {
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.445,0.05,0.55,0.95);
+    cursor: pointer;
+    filter: brightness(95%);
+}
+
+.image img {
+    width: 90%; /* Width of images remains the same */
+    height: 380px; /* Image height */
+    border-radius: 20px;
+    box-shadow: #000000;
+}
+
+.image h3 {
+    color: white;
+    position: absolute;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    top: 10px;
+    right: 15px;
+}
+
+
+.dest-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    margin-bottom: 50px;
+}
+
+.location h4{
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    color:#000000;
+}
+
+.pac-details li{
+    font-size: 19px;
+    color: #4c4c4c;
+    margin-left: 15px;
+    margin-bottom: 2px;
+    list-style-type: disc;
+}
+
+.image:hover{
+    filter: brightness(80%);
+    transform: scale(1.03);
+}
+
+/* Slider Page */
+.slider-page {
+    background-color: rgb(0, 0, 0); /* Set background to black */
+    padding: 100px; /* Optional padding for the section */
+    position: relative;  /* Position relative to hold arrows outside the image */
+}
+
+/* Slider Container */
+.slider-container {
+    position: relative;
+    top: 0px;
+    width: 100%; /* Full width of the viewport or container */
+    max-width: 1200px; /* Maximum width for the container */
+    height: 830px; /* Fixed height */
+    margin: 0 auto; /* Center the slider */
+    overflow: hidden; /* Ensure only one image is visible at a time */
+    display: flex;
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
+    background-color: rgb(0, 0, 0); /* Optional background for better appearance */
+    border: #000000;
+    border-radius: 10px;
+}
+
+/* Slider */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth scroll transition */
+}
+
+/* Images */
+.slider-image {
+    flex-shrink: 0;
+    width: 100%; /* Full width within the container */
+    height: 100%; /* Full height to fill the container */
+    object-fit: cover; /* Maintain aspect ratio without distortion */
+    object-position: center; /* Ensure the image is centered */
+}
+
+/* Navigation Buttons */
+.navigation {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    width: 99%; /* Cover the entire slider width */
+    display: flex;
+    justify-content: space-between; /* Place arrows at sides */
+    transform: translateY(-50%); /* Adjust to true center vertically */
+    z-index: 1000;
+    padding: 0 20px; /* Add space between the arrows and the edges */
+}
+
+/* Custom arrow button styles */
+.arrow-button {
+    background-color: white !important; /* Force background color to white */
+    color: black; /* Change the arrow color to black for better visibility */
+    border: 2px solid rgba(0, 0, 0, 0.3); /* Thin border for the buttons */
+    padding: 10px 20px;
+    font-size:30px;
+    cursor: pointer;
+    border-radius: 10%; /* Circular buttons */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1001; /* Ensure buttons are above other elements */
+}
+
+/* Hover effect for the arrow buttons */
+.arrow-button:hover {
+    background-color: #f0f0f0 !important; /* Slightly gray on hover */
+    transform: scale(1.1); /* Slight grow effect on hover */
+}
+
+/* Left arrow position outside the image */
+.arrow-left {
+    position: absolute;
+    left: 20px; /* Move the left button outside of the image */
+}
+
+/* Right arrow position outside the image */
+.arrow-right {
+    position: absolute;
+    right: -0px; /* Move the right button outside of the image */
+}
+
+/* Locations */
+
+.location-content {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 10px; /* Set spacing between items */
+    padding: 0; /* Remove extra padding if any */
+}
+
+.col-content {
+    position: relative;
+    filter: brightness(93%); /* Darker background */
+    transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    border-radius: 18px; /* Rounded corners */
+    width: 300px; /* Increased width for larger boxes */
+    height: 480px; /* Increased height for larger boxes */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    background-color: rgba(85, 84, 84, 0.7); /* Darker default background color */
+    margin: 0; /* Ensure no extra margin between items */
+}
+
+.col-content img {
+    margin: 0; /* Remove bottom margin */
+    height: 100%; /* Set image height to fill the container */
+    width: 100%; /* Make image responsive */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+.col-content h5 {
+    position: absolute;
+    font-size: 30px; /* Slightly larger font size */
+    color: #ffffff;
+    font-weight: 500;
+    left: 20px;
+    bottom: 33px; /* Adjusted for better spacing */
+    cursor: pointer;
+}
+
+.col-content p {
+    position: absolute;
+    font-size: 16px; /* Slightly larger font size */
+    color: rgb(255, 255, 255); /* Change text color for better contrast */
+    left: 22px;
+    bottom: 15px; /* Adjusted for better spacing */
+    cursor: pointer;
+}
+
+.col-content:hover {
+    background-color: rgba(22, 255, 1, 0.5); /* Lighter green background on hover */
+    filter: brightness(100%);
+    transform: scale(1.05); /* Slightly scale down on hover */
+    cursor: pointer;
+}
+
+
+/* Newsletter */
+
+.newsletter{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.newstext h2{
+    margin-top: 100px;
+    font-size: 38px;
+}
+
+.newstext p{
+    font-size: 20px;
+    color: #4c4c4c;
+}
+
+.newsletter form{
+    margin-top: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.newsletter form input:first-child{
+    display: inline-block;
+    width: 300px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 20px 150px 20px 30px;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+}
+
+.newsletter form input:last-child{
+    display: inline-block;
+    position: absolute;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(21, 74, 74);
+    padding: 14px 30px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 450;
+    top: 6px;
+    right: 6px;
+    transition: ease 0.30s;
+}
+
+.newsletter form input:last-child:hover{
+    border: 2px solid rgb(21, 74, 74);
+    background-color: white;
+    color: rgb(21, 74, 74);
+}
+
+
+/* Footer */
+
+.footer{
+    margin-top: 80px;
+    background-color: rgb(0, 0, 0);
+}
+
+.foot{
+    padding: 20px 0;
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.footlinks h4{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+.footlinks h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    left: 0;
+    bottom: -7px;
+    background: white;
+}
+
+.footlinks ul li{
+    margin-bottom: 15px;
+}
+
+.footlinks ul li a{
+    font-size: 17px;
+    color: #dddddd;
+    display: block;
+    transition: ease 0.30s;
+}
+
+.footlinks ul li a:hover{
+    transform: translate(6px);
+    color: white;
+}
+
+.social a{
+    font-size: 25px;
+    margin: 4px;
+    height: 40px;
+    width: 40px;
+    color: rgb(21, 74, 74);
+    background-color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: ease 0.30s;
+}
+
+.social a:hover{
+    transform: scale(1.2);
+}
+
+.end{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 12px;
+}
+
+.end p{
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+/* About Us */
+
+.aboutbody{
+    background-color: #191919;
+}
+
+.about{
+    width: 100%;
+    padding: 78px 0px;
+}
+
+.about img{
+    height: auto;
+    width: 400px;
+}
+
+.abt-text{
+    width: 500px;
+}
+
+.abt-text h1{
+    font-size: 70px;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.abt-text h1 span{
+    color: #fc0050;
+    letter-spacing: 1px;
+}
+
+.abt-text p{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 45px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.connectbtn{
+    display: inline-block;
+    background-color: #fc0050;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: ease 0.4s;
+    border: 2px solid transparent;
+    letter-spacing: 1px;
+}
+
+.connectbtn:hover{
+    background-color: transparent;
+    border: 2px solid #fc0050;
+    transform: scale(1.1);
+}
+
+.connect-section{
+    margin-top: 26px;
+}
+
+
+.social-icons a{
+    height: 40px;
+    width: 40px;
+    margin: 4px;
+    font-size: 30px;
+    color: #101010;
+    background-color: white;
+    border-radius: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease 0.30s;
+}
+
+.social-icons a:hover{
+    transform: scale(1.2);
+}
+/* Contact Us */
+.title-logo-contact {
+    position: relative; /* Ensure .title-logo-contact img is positioned relative to this container */
+    display: flex;
+    right: -1100px;
+    justify-content: center; /* Center content horizontally (image initially) */
+    margin: 40px 0;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+.title-logo-contact img {
+    position: absolute; /* Allow free positioning within the parent container */
+    top: 0; /* Adjust vertically as needed */
+    left: -370px; /* Align image to the right corner */
+    height: 630px; /* Maintain aspect ratio */
+    width: auto; /* Keep width proportional */
+    max-width: 100%; /* Ensure it doesn't exceed the container */
+    margin: 200px 0; /* Add space above and below */
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.title-logo-contact img:hover {
+    transform: scale(1.05) rotate(15deg);
+    opacity: 0.9;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    filter: brightness(1.2);
+}
+
+/* Main Form Container */
+.form-container-contact {
+    position: absolute;
+    right: 50%;
+    top: 20%;
+    background-color: #fff; /* White background for contrast */
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 1 6px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    width: 40%;
+    height: auto;
+    max-width: 10000px;
+    box-sizing: border-box; /* Ensures padding and borders are included in dimensions */
+}
+
+/* Form Elements */
+.box-contact {
+    width: 100%; /* Adjusts to fit the container */
+    padding: 17px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family:'Times New Roman', Times, serif;
+    box-sizing: border-box; /* Includes padding and border in the width calculation */
+    background-color: #f9f9f9; /* Light gray background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+textarea.box-contact {
+    resize: none;
+    height: 220px; /* Set a default height */
+    background-color: #f9f9f9; /* Match the input boxes' background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Same shadow as input boxes */
+}
+
+/* Submit Button */
+.btn-contact {
+    background-color: rgba(0, 0, 0, 0.788);
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block; /* Make the button block-level */
+    width: 100%; /* Make the button fill the container */
+    max-width: 300px; /* Optional: Set a maximum width */
+    margin: 10px auto; /* Center the button horizontally */
+}
+
+
+.btn-contact:hover {
+    background-color: rgba(11, 146, 18, 0.9);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhances shadow on hover */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container-contact {
+        width: 80%; /* Adjust width for smaller screens */
+        right: 10%;
+        top: 15%;
+    }
+}
+
+
+/* Registration Form */
+
+.register-body{
+    background-color: #101010;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.registration{
+    padding: 110px 30%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.register-form h1{
+    font-size: 80px;
+    color: white;
+    margin-bottom: 20px;
+}
+.register-form h1 span{
+    color: #fc0050;
+}
+
+.register-form{
+    color: white;
+    font-size: 20px;
+}
+
+.register-form form input{
+    color: white;
+    padding: 17px;
+    background-color: #191919;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+.register-form h4{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #fc0050;
+}
+
+
+.register-form form .submitbtn{
+    display: inline-block;
+    background-color: #fc0050;
+    font-size: 27px;
+    font-weight: 600px;
+    border: 2px solid transparent;
+    border-radius: 60px;
+    width: 220px;
+    cursor: pointer;
+    transition: ease 0.30s;
+}
+
+.register-form form .submitbtn:hover{
+    border: 2px solid #fc0050;
+    background-color: transparent;
+    transform: scale(1.1);
+}
+
+
+.location-body{
+    background-color: #191919;
+    color: white;
+}
+
+.location-section{
+    padding: 110px;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.location-heading h1{
+    margin-top: 20px;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.location-heading h1 span{
+    color: #fc0050;
+}
+
+.location-detail h1{
+    padding-top: 60px;
+    color: #fc0050;
+    font-size: 40px;
+}
+
+.location-detail p{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.location-img img{
+    height: 400px;
+    width: 400px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.stars i{
+    font-size: 20px;
+    color: rgb(197, 167, 44);
+}

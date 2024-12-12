@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventura Viajeros</title>
+    <link rel="icon" href="./logo_test.png">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Didot&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="content" id="home">
+    <nav>
+        <a href="#" class="logo"><span class="logo-green">Adventura </span> Viajeros</a>            
+        
+        <ul class="navbar">
+            <li>
+                <a href="index.html">Home</a>
+                <a href="index.html#locations">Souvenir</a>
+                <a href="index.html#package">Tour Packages</a>
+                <a href="./about.html">About Us</a>
+                <a href="Contact Us.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Add the slider-page class here -->
+    <div class="slider-page">
+        <div class="slider-container">
+            <div class="slider">
+                <img src="./files/LOCAL (1).png" alt="Japan Image 1" class="slider-image">
+                <img src="./files/LOCAL (2).png" alt="Japan Image 2" class="slider-image">
+                <img src="./files/LOCAL (3).png" alt="Japan Image 3" class="slider-image">
+            </div>
+        </div>
+    </div>
+            <div class="navigation">
+                <button id="prev" class="arrow-button arrow-left">⟵</button>
+                <button id="next" class="arrow-button arrow-right">⟶</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const slider = document.querySelector('.slider');
+        const images = document.querySelectorAll('.slider img');
+        const prev = document.getElementById('prev');
+        const next = document.getElementById('next');
+
+        let index = 0;
+
+        function showSlide(i) {
+            index = (i + images.length) % images.length;
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        prev.addEventListener('click', () => showSlide(index - 1));
+        next.addEventListener('click', () => showSlide(index + 1));
+    </script>
+</body>
+</html>
